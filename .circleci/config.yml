@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python3:3.6.9
+      - image: circleci/python:2.7-jessie
     steps:
       - checkout
       - run:
@@ -10,7 +10,7 @@ jobs:
           command: sudo apt-get update && sudo apt-get install wget zip unzip -y
       - run:
           name: Install awscli
-          command: sudo pip3 install awscli
+          command: sudo pip install awscli
       - run:
           name: Download packer
           command: |
