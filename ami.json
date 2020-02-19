@@ -8,6 +8,7 @@
         "ami_users": "249381305013,044712840028",
         "ssh_username": "ubuntu"
     },
+
     "builders": [
         {
             "type": "amazon-ebs",
@@ -40,10 +41,7 @@
             "inline": [
                 "sudo apt-get update",
                 "sudo apt-get install apache2 -y",
-		"sudo npm install nodejs -y",
-	  	"sudo npm install express -y",
-	  	"node -v",
-	  	"npm -v"
+		
             ]
         }
     ]
