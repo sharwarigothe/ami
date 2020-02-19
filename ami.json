@@ -39,7 +39,11 @@
             ],
             "inline": [
                 "sudo apt-get update",
-                "sudo apt-get install apache2 -y"
+                "sudo apt-get install apache2 -y",
+		"sudo npm install nodejs -y",
+	  	"sudo npm install express -y",
+	  	"node -v",
+	  	"npm -v"
             ]
         }
     ]
