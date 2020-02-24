@@ -9,8 +9,6 @@
         "ssh_username": "ubuntu"
     },
 
-
-
     "builders": [
         {
             "type": "amazon-ebs",
