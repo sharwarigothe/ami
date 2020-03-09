@@ -45,8 +45,8 @@
                 "wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install",
                 "chmod +x ./install",
                 "sudo ./install auto",
-                "sudo systemctl start codedeploy-agent",
-                "sudo systemctl status codedeploy-agent",
+                "sudo service codedeploy-agent start",
+                "sudo service codedeploy-agent status",
                 "sudo apt-get -y install curl",
                 "curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -",
                 "sudo apt-get -y install nodejs"            ]
