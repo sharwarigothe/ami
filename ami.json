@@ -39,9 +39,17 @@
             ],
             "inline": [
                 "sudo apt-get update",
-                "sudo apt-get install apache2 -y"
-		
-            ]
+                "sudo apt -y install ruby",
+                "sudo apt-get -y install wget",
+                "cd /home/ubuntu",
+                "wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install",
+                "chmod +x ./install",
+                "sudo ./install auto",
+                "sudo service codedeploy-agent start",
+                "sudo service codedeploy-agent status",
+                "sudo apt-get -y install curl",
+                "curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -",
+                "sudo apt-get -y install nodejs"            ]
         }
     ]
 }
